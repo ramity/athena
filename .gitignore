@@ -1,0 +1,9 @@
+# Ignore bytecode cache files
+__pycache__
+
+# Ignore contents of all input and output directories
+**/input/*
+**/output/*
+
+# Override to allow .gitkeep files
+!.gitkeep

@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  cv:
+    container_name: athena_cv
+    build:
+      context: ./docker/cv
+      dockerfile: Dockerfile
+    image: athena_cv
+    volumes:
+      - ./src:/var/src
