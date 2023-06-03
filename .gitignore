@@ -4,6 +4,12 @@ __pycache__
 # Ignore contents of all input and output directories
 **/input/*
 **/output/*
+**/.ipynb_checkpoints/*
+
+# Ignore specific filetypes
+*.pt
+*.pkl
+*.gz
 
 # Override to allow .gitkeep files
 !.gitkeep
