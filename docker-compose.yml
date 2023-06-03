@@ -8,3 +8,13 @@ services:
     image: athena_cv
     volumes:
       - ./src:/var/src
+  ml:
+    container_name: athena_ml
+    build:
+      context: ./docker/ml
+      dockerfile: Dockerfile
+    image: athena_ml
+    ports:
+      - 8888:8888
+    volumes:
+      - ./notebooks:/var/notebooks
